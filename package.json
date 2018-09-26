@@ -1,6 +1,6 @@
 {
   "name": "@tleef/react-grid",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Responsive grid system based on flexbox",
   "main": "lib/index.js",
   "scripts": {
