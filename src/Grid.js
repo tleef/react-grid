@@ -66,7 +66,7 @@ const StyledGrid = styled.div`
 
     if (props.sm === true) {
       return css`
-        @media (max-width: ${props.breakpoints.sm}px) {
+        @media (min-width: ${props.breakpoints.sm}px) {
           flex-grow: 1;
           flex-basis: 0;
           max-width: 100%;
@@ -78,7 +78,7 @@ const StyledGrid = styled.div`
     const width = `${Math.round((props.sm / COLUMNS) * 10e7) / 10e5}%`
 
     return css`
-      @media (max-width: ${props.breakpoints.sm}px) {
+      @media (min-width: ${props.breakpoints.sm}px) {
         flex-basis: ${width};
         max-width: ${width};
       }
@@ -92,7 +92,7 @@ const StyledGrid = styled.div`
 
     if (props.md === true) {
       return css`
-        @media (max-width: ${props.breakpoints.md}px) {
+        @media (min-width: ${props.breakpoints.md}px) {
           flex-grow: 1;
           flex-basis: 0;
           max-width: 100%;
@@ -104,7 +104,7 @@ const StyledGrid = styled.div`
     const width = `${Math.round((props.md / COLUMNS) * 10e7) / 10e5}%`
 
     return css`
-      @media (max-width: ${props.breakpoints.md}px) {
+      @media (min-width: ${props.breakpoints.md}px) {
         flex-basis: ${width};
         max-width: ${width};
       }
@@ -118,7 +118,7 @@ const StyledGrid = styled.div`
 
     if (props.lg === true) {
       return css`
-        @media (max-width: ${props.breakpoints.lg}px) {
+        @media (min-width: ${props.breakpoints.lg}px) {
           flex-grow: 1;
           flex-basis: 0;
           max-width: 100%;
@@ -130,7 +130,7 @@ const StyledGrid = styled.div`
     const width = `${Math.round((props.lg / COLUMNS) * 10e7) / 10e5}%`
 
     return css`
-      @media (max-width: ${props.breakpoints.lg}px) {
+      @media (min-width: ${props.breakpoints.lg}px) {
         flex-basis: ${width};
         max-width: ${width};
       }
@@ -144,7 +144,7 @@ const StyledGrid = styled.div`
 
     if (props.xl === true) {
       return css`
-        @media (max-width: ${props.breakpoints.xl}px) {
+        @media (min-width: ${props.breakpoints.xl}px) {
           flex-grow: 1;
           flex-basis: 0;
           max-width: 100%;
@@ -156,7 +156,7 @@ const StyledGrid = styled.div`
     const width = `${Math.round((props.xl / COLUMNS) * 10e7) / 10e5}%`
 
     return css`
-      @media (max-width: ${props.breakpoints.xl}px) {
+      @media (min-width: ${props.breakpoints.xl}px) {
         flex-basis: ${width};
         max-width: ${width};
       }
