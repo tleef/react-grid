@@ -16,7 +16,7 @@ exports[`Grid renders correctly 1`] = `
 }
 
 .c0 > .__grid_item__ {
-  padding: 8;
+  padding: 8px;
 }
 
 .c1 {

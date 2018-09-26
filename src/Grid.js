@@ -33,7 +33,7 @@ const StyledGrid = styled.div`
     margin: ${props => -props.spacing / 2}px;
     width: calc(100% + ${props.spacing}px);
     & > .__grid_item__ {
-      padding: ${props.spacing / 2};
+      padding: ${props.spacing / 2}px;
     }
   `}
   
