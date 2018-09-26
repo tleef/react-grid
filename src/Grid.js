@@ -13,15 +13,10 @@ const BREAKPOINTS = {
 }
 
 const StyledGrid = styled.div`
-  align-content: ${props => props.alignContent};
-  align-items: ${props => props.alignItems};
-  flex-direction: ${props => props.flexDirection};
-  flex-wrap: ${props => props.flexWrap};
-  justify-content: ${props => props.justifyContent};
-
   ${props => props.container && css`
     box-sizing: border-box;
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
   `}
   
@@ -167,6 +162,12 @@ const StyledGrid = styled.div`
       }
     `
   }}
+  
+  align-content: ${props => props.alignContent !== Grid.defaultProps.alignContent && props.alignContent};
+  align-items: ${props => props.alignItems !== Grid.defaultProps.alignItems && props.alignItems};
+  flex-direction: ${props => props.flexDirection !== Grid.defaultProps.flexDirection && props.flexDirection};
+  flex-wrap: ${props => props.flexWrap !== Grid.defaultProps.flexWrap && props.flexWrap};
+  justify-content: ${props => props.justifyContent !== Grid.defaultProps.justifyContent && props.justifyContent};
 `
 
 const Grid = (props) => (
