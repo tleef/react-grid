@@ -1,0 +1,46 @@
+{
+  "name": "@tleef/react-grid",
+  "version": "1.0.0",
+  "description": "Responsive grid system based on flexbox",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "standard \"src/**/*.js\"",
+    "test": "jest",
+    "build": "babel src --out-dir lib",
+    "prepare": "yarn build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tleef/react-grid.git"
+  },
+  "keywords": [
+    "react",
+    "responsive",
+    "grid",
+    "flex",
+    "styled-components"
+  ],
+  "author": "Tom Lee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tleef/react-grid/issues"
+  },
+  "homepage": "https://github.com/tleef/react-grid#readme",
+  "dependencies": {
+    "prop-types": "^15.6.2",
+    "react": "^16.5.2",
+    "styled-components": "^3.4.9"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.0",
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "jest": "^23.6.0",
+    "jest-styled-components": "^6.2.1",
+    "react-test-renderer": "^16.5.2",
+    "standard": "^12.0.1"
+  }
+}
