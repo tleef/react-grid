@@ -5,7 +5,7 @@ import Grid from '../src/Grid'
 
 test('Grid renders correctly', () => {
   const tree = renderer.create(
-    <Grid container>
+    <Grid container spacing={16}>
       <Grid item xs={12}/>
     </Grid>
   ).toJSON()

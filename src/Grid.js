@@ -1,5 +1,7 @@
+import React from 'react'
 import styled, { css } from 'styled-components'
 import PropTypes from 'prop-types'
+import classNames from 'classnames'
 
 const COLUMNS = 12
 const BREAKPOINTS = {
@@ -10,7 +12,7 @@ const BREAKPOINTS = {
   xl: 1920
 }
 
-const Grid = styled.div`
+const StyledGrid = styled.div`
   align-content: ${props => props.alignContent};
   align-items: ${props => props.alignItems};
   flex-direction: ${props => props.flexDirection};
@@ -35,7 +37,7 @@ const Grid = styled.div`
   ${props => props.container && props.spacing && css`
     margin: ${props => -props.spacing / 2}px;
     width: calc(100% + ${props.spacing}px);
-    & > & {
+    & > .__grid_item__ {
       padding: ${props.spacing / 2};
     }
   `}
@@ -166,6 +168,10 @@ const Grid = styled.div`
     `
   }}
 `
+
+const Grid = (props) => (
+  <StyledGrid className={classNames({ '__grid_item__': props.item })} {...props} />
+)
 
 Grid.displayName = 'Grid'
 

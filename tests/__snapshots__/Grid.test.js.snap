@@ -25,6 +25,12 @@ exports[`Grid renders correctly 1`] = `
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  margin: -8px;
+  width: calc(100% + 16px);
+}
+
+.c0 > .__grid_item__ {
+  padding: 8;
 }
 
 .c1 {
@@ -55,10 +61,10 @@ exports[`Grid renders correctly 1`] = `
 
 <div
   className="c0"
-  spacing={0}
+  spacing={16}
 >
   <div
-    className="c1"
+    className="__grid_item__ c1"
     spacing={0}
   />
 </div>
